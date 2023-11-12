@@ -4,21 +4,30 @@ import showLists from './components/RestaurantList.vue';
 
 <template>
   <div id="app">
-    <header>
-      <div class="wrapper">
-        <showLists />
-      </div>
-    </header>
-
-
+    <div class="wrapper">
+      <show-lists />
+    </div>
   </div>
 </template>
 
 <style scoped>
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #777;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  
+}
 </style>
