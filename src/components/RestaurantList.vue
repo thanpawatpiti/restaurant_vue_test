@@ -48,7 +48,7 @@ export default {
     methods: {
         searchRestaurants() {
             // Use Axios to communicate with the Laravel API endpoint from env file
-            axios.post(`http://127.0.0.1:8000/api/restaurant-laravel-test/search`, {
+            axios.post(`${import.meta.env.VITE_API_ENDPOINT}/api/restaurant-laravel-test/search`, {
                 query: this.keyword,
             }).then(response => {
                 if (response.data.success) {
